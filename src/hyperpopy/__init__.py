@@ -15,7 +15,6 @@ This package provides tools for:
 
 __version__ = "0.1.2"
 __author__ = "Alec Shelley"
-__email__ = "ams01@stanford.edu"
 
 # Import main functions from each module for easy access
 from .analytic_utils import (
@@ -60,7 +59,6 @@ __all__ = [
     # Version info
     "__version__",
     "__author__", 
-    "__email__",
     
     # Analytic utilities
     "rate",
