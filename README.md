@@ -1,6 +1,6 @@
-# HyperPopy: Poisson Hyperplane Model Package
+# hyperpopy: Poisson Hyperplane Model Package
 
-[![PyPI version](https://badge.fury.io/py/hyperpopy.svg)](https://badge.fury.io/py/hyperpopy)
+[![PyPI version](https://badge.fury.io/py/popy.svg)](https://badge.fury.io/py/popy)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,7 +17,7 @@ A Python package for working with Poisson hyperplane models, providing tools for
 ## Installation
 
 ```bash
-pip install hyperpopy
+pip install popy
 ```
 
 ## Quick Start
@@ -116,5 +116,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Links
 
 - [GitHub Repository](https://github.com/AlecShelley/popy)
-- [PyPI Package](https://pypi.org/project/hyperpopy/)
+- [PyPI Package](https://pypi.org/project/popy/)
 - [Issue Tracker](https://github.com/AlecShelley/popy/issues)
