@@ -1,4 +1,4 @@
-# Popy: Poisson Hyperplane Model Package
+# hyperpopy: Poisson Hyperplane Model Package
 
 [![PyPI version](https://badge.fury.io/py/popy.svg)](https://badge.fury.io/py/popy)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
