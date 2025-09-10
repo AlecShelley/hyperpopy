@@ -27,8 +27,11 @@ from .analytic_utils import (
     hitrate_2d,
     hitrate_3d,
     slash_rates,
+    slash_rates_1d,
     color_distribution,
     color_from_partitions,
+    dihedral_angle,
+    ensure_outward_facing,
 )
 
 from .generation_utils import (
@@ -46,6 +49,10 @@ from .mc_utils import (
     plot_mc_chord_lengths_with_errorbars,
     probability_landscape,
     figure_3_helper,
+    hyperplane_colorer_1d,
+    hyperplane_colorer_3d,
+    mc_chord_length,
+    check_chord_length,
 )
 
 # Define what gets imported with "from hyperpopy import *"
@@ -64,8 +71,11 @@ __all__ = [
     "hitrate_2d", 
     "hitrate_3d",
     "slash_rates",
+    "slash_rates_1d",
     "color_distribution",
     "color_from_partitions",
+    "dihedral_angle",
+    "ensure_outward_facing",
     
     # Generation utilities
     "sample_from_ball",
@@ -81,4 +91,8 @@ __all__ = [
     "plot_mc_chord_lengths_with_errorbars", 
     "probability_landscape",
     "figure_3_helper",
+    "hyperplane_colorer_1d",
+    "hyperplane_colorer_3d",
+    "mc_chord_length",
+    "check_chord_length",
 ]

@@ -8,11 +8,10 @@ A Python package for working with Poisson hyperplane models, providing tools for
 
 ## Features
 
-- **Analytical Calculations**: Compute conditional probability functions for color in Poisson hyperplane models
-- **Generation & Visualization**: Generate and plot realizations of the Poisson hyperplane process
+- **Analytical Calculations**: Compute conditional probability functions for color in the Poisson model
+- **Generation & Visualization**: Generate and plot realizations of the Poisson model
 - **Monte Carlo Simulation**: Estimate connectivity distributions and color probabilities
-- **Probability Landscapes**: Visualize conditional probability functions and convergence analysis
-- **Multi-dimensional Support**: Works in 1D, 2D, and 3D spaces
+- **Probability Landscapes**: Visualize conditional probability functions
 
 ## Installation
 
@@ -73,24 +72,6 @@ See the `examples/` directory for comprehensive examples including:
 - Probability landscape visualization
 - Chord length statistics
 
-## Requirements
-
-- Python 3.8+
-- NumPy >= 1.20.0
-- SciPy >= 1.7.0
-- Matplotlib >= 3.3.0
-- scikit-learn >= 1.0.0
-- Numba >= 0.50.0
-
-## Development
-
-To install in development mode:
-
-```bash
-git clone https://github.com/AlecShelley/hyperpopy.git
-cd hyperpopy
-pip install -e .
-```
 
 ## License
 
