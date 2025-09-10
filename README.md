@@ -1,6 +1,6 @@
 # hyperpopy: Poisson Hyperplane Model Package
 
-[![PyPI version](https://badge.fury.io/py/popy.svg)](https://badge.fury.io/py/popy)
+[![PyPI version](https://badge.fury.io/py/hyperpopy.svg)](https://badge.fury.io/py/hyperpopy)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,25 +17,25 @@ A Python package for working with Poisson hyperplane models, providing tools for
 ## Installation
 
 ```bash
-pip install popy
+pip install hyperpopy
 ```
 
 ## Quick Start
 
 ```python
-import popy
+import hyperpopy
 import numpy as np
 
 # Calculate the arrival rate of a Poisson hyperplane process
-rate_2d = popy.rate(2, 1.0)  # 2D, radius 1.0
+rate_2d = hyperpopy.rate(2, 1.0)  # 2D, radius 1.0
 print(f"2D Poisson rate: {rate_2d}")
 
 # Generate a 2D visualization of the Poisson hyperplane process
-fig = popy.plot_hyperplanes_color_2d(
+fig = hyperpopy.plot_hyperplanes_color_2d(
     radius=10,
     grid_resolution=100,
     colorcutoffs=np.array([0.5]),
-    cmap_list=popy.frozen_lake_colors
+    cmap_list=hyperpopy.frozen_lake_colors
 )
 
 # Calculate color distribution for given points
@@ -43,7 +43,7 @@ points = np.array([[0, 0], [1, 0], [0, 1]])
 colors = (0, 1, 0)  # Known colors for first two points
 color_dist = (0.5, 0.5)  # Equal probability for each color
 
-prob_dist = popy.color_distribution(points, colors, color_dist)
+prob_dist = hyperpopy.color_distribution(points, colors, color_dist)
 print(f"Color probabilities: {prob_dist}")
 ```
 
@@ -87,8 +87,8 @@ See the `examples/` directory for comprehensive examples including:
 To install in development mode:
 
 ```bash
-git clone https://github.com/AlecShelley/popy.git
-cd popy
+git clone https://github.com/AlecShelley/hyperpopy.git
+cd hyperpopy
 pip install -e .
 ```
 

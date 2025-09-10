@@ -48,7 +48,7 @@ from .mc_utils import (
     figure_3_helper,
 )
 
-# Define what gets imported with "from popy import *"
+# Define what gets imported with "from hyperpopy import *"
 __all__ = [
     # Version info
     "__version__",
