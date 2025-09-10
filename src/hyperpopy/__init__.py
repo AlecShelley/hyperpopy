@@ -13,7 +13,7 @@ This package provides tools for:
 - Visualization of conditional probability functions and convergence analysis
 """
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __author__ = "Alec Shelley"
 
 # Import main functions from each module for easy access
