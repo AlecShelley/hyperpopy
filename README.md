@@ -17,7 +17,7 @@ A Python package for working with Poisson hyperplane models, providing tools for
 ## Installation
 
 ```bash
-pip install hyperpopy
+pip install --upgrade hyperpopy
 ```
 
 ## Quick Start
