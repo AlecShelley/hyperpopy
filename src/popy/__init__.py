@@ -1,5 +1,5 @@
 """
-Popy: Poisson Hyperplane Model Package
+HyperPopy: Poisson Hyperplane Model Package
 
 A Python package for working with Poisson hyperplane models, including:
 - Analytical calculations for connectivity and color distributions

@@ -56,15 +56,15 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AlecShelley/popy"
-Repository = "https://github.com/AlecShelley/popy"
-Issues = "https://github.com/AlecShelley/popy/issues"
+Homepage = "https://github.com/AlecShelley/hyperpopy"
+Repository = "https://github.com/AlecShelley/hyperpopy"
+Issues = "https://github.com/AlecShelley/hyperpopy/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-popy = ["*.txt", "*.md"]
+hyperpopy = ["*.txt", "*.md"]
 
 # Black configuration
 [tool.black]
@@ -90,7 +90,7 @@ extend-exclude = '''
 profile = "black"
 multi_line_output = 3
 line_length = 88
-known_first_party = ["popy"]
+known_first_party = ["hyperpopy"]
 
 # Pylint configuration
 [tool.pylint.messages_control]

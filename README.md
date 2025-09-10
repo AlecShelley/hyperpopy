@@ -101,11 +101,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this package in your research, please cite:
 
 ```bibtex
-@software{popy2024,
-  title={Popy: Poisson Hyperplane Model Package},
+@software{hyperpopy2024,
+  title={HyperPopy: Poisson Hyperplane Model Package},
   author={Alec Shelley},
   year={2024},
-  url={https://github.com/AlecShelley/popy}
+  url={https://github.com/AlecShelley/hyperpopy}
 }
 ```
 
@@ -115,6 +115,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Links
 
-- [GitHub Repository](https://github.com/AlecShelley/popy)
-- [PyPI Package](https://pypi.org/project/popy/)
-- [Issue Tracker](https://github.com/AlecShelley/popy/issues)
+- [GitHub Repository](https://github.com/AlecShelley/hyperpopy)
+- [PyPI Package](https://pypi.org/project/hyperpopy/)
+- [Issue Tracker](https://github.com/AlecShelley/hyperpopy/issues)
