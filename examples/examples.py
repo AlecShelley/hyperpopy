@@ -12,17 +12,11 @@ from matplotlib_inline.backend_inline import set_matplotlib_formats
 # Add src directory to path to find hyperpopy package
 # This adds the src directory (two levels up from examples) to Python path
 current_dir = os.path.dirname(os.path.abspath(__file__))
-src_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
+src_dir = os.path.abspath(os.path.join(current_dir, '..', 'src'))
 if src_dir not in sys.path:
     sys.path.insert(0, src_dir)
 
-from hyperpopy.generation_utils import plot_hyperplanes_color_2d  # pylint: disable=wrong-import-position,import-error
-from hyperpopy.mc_utils import (  # pylint: disable=wrong-import-position,import-error
-    plot_mc_colors_with_errorbars,
-    figure_3_helper,
-    plot_mc_chord_lengths_with_errorbars,
-    monte_carlo_convergence_with_error_bars,
-)
+import hyperpopy as hp  # pylint: disable=wrong-import-position,import-error
 
 set_matplotlib_formats('png', dpi=60)  # smaller default display dpi
 
@@ -44,7 +38,7 @@ CUTOFF = 0.65 #cutoffs determine the values at which a random number
 #then there are three colors, with color 0 having a 20% chance, color 1
 #having a 50% chance, and color 3 having a 30% chance.
 
-fig1 = plot_hyperplanes_color_2d( #frozen lake-like Poisson model
+fig1 = hp.plot_hyperplanes_color_2d( #frozen lake-like Poisson model
     RAD,
     RES,
     colorcutoffs=np.array([CUTOFF]),
@@ -54,7 +48,7 @@ fig1 = plot_hyperplanes_color_2d( #frozen lake-like Poisson model
 
 RAD = 75
 CUTOFF = 0.87
-fig2 = plot_hyperplanes_color_2d( #meat-like Poisson model
+fig2 = hp.plot_hyperplanes_color_2d( #meat-like Poisson model
     RAD,
     RES,
     colorcutoffs=np.array([CUTOFF]),
@@ -64,7 +58,7 @@ fig2 = plot_hyperplanes_color_2d( #meat-like Poisson model
 
 RAD = 10
 cutoffs = np.linspace(0.1, 1, 9)
-fig3 = plot_hyperplanes_color_2d( #rainbow-colored Poisson model
+fig3 = hp.plot_hyperplanes_color_2d( #rainbow-colored Poisson model
     RAD,
     RES,
     colorcutoffs=cutoffs,
@@ -83,7 +77,7 @@ NUM_MONTE_CARLO_RUNS = 20
 color_dist = (0.1, 0.1, 0.8) #probability of color 0 = .1, color 2 = .8
 colors = (0, 2, 2) #known colors of the first three points
 
-fig, ax, probs_mean, probs_std = plot_mc_colors_with_errorbars(
+fig, ax, probs_mean, probs_std = hp.plot_mc_colors_with_errorbars(
     D,
     gridpoints,
     color_dist,
@@ -95,7 +89,7 @@ fig, ax, probs_mean, probs_std = plot_mc_colors_with_errorbars(
 
 ### Figure 3 ###
 #Several different plots of CPF conditioned on two and three points
-figure_3_helper(color_dist=(0.5, 0.5), grid_resolution=30)
+hp.figure_3_helper(color_dist=(0.5, 0.5), grid_resolution=30)
 
 ### Supplement Figure 1 ###
 #confirming that chord lengths are distributed as expected
@@ -108,7 +102,7 @@ samples_array = np.logspace(0, MAX_SAMPLES_POWER, 20, dtype=int)
 NUM_MONTE_CARLO_RUNS = 20
 
 # Main plotting function
-fig, ax, chord_lengths_mean, stdev = plot_mc_chord_lengths_with_errorbars(
+fig, ax, chord_lengths_mean, stdev = hp.plot_mc_chord_lengths_with_errorbars(
     R,
     RESOLUTION,
     color_dist,
@@ -172,7 +166,7 @@ analytic_probs = {
 
 
 # Call the wrapper function
-fig, ax, probs_mean, probs_std = monte_carlo_convergence_with_error_bars(
+fig, ax, probs_mean, probs_std = hp.monte_carlo_convergence_with_error_bars(
     D,
     gridpoints=gridpoints,
     samples_array=samples_array,
