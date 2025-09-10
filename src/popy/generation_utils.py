@@ -13,7 +13,7 @@ import numpy as np
 from matplotlib.patches import Circle
 from numba import jit
 
-from analytic_utils import rate
+from .analytic_utils import rate
 
 ### The following functions can create and plot realizations of the Poisson model. ###
 

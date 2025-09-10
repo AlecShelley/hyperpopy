@@ -16,12 +16,12 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import numpy as np
 
-from analytic_utils import (
+from .analytic_utils import (
     rate,
     generate_all_connectivity_tuples,
     color_distribution,
 )
-from generation_utils import (
+from .generation_utils import (
     sample_from_ball,
     hyperplane_partition,
     hyperplane_colorer_2d,
