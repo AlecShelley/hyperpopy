@@ -4,14 +4,10 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Python package for working with Poisson hyperplane models, providing tools for analytical calculations, generation, visualization, and Monte Carlo simulation of Poisson hyperplane processes.
+A Python package for the Poisson hyperplane model. analytic_utils contains helper functions for calculating the conditional probability functions in the Poisson model, including the main result of the PRL paper "Multipoint Correlations in Poisson Media." generation_utils.py contains helper functions for plotting and generating realizations of the Poisson model, and mc_utils.py contains helper functions for Monte Carlo simulations. The most important functions in this package are color_distribution from analytic_utils.py, which calculates the CPF, and hyperplane_colorer_2d from generation_utils, which generates and plots realizations of two-dimensional Poisson media.
 
-## Features
+The examples folder contains code to reproduce plots from the PRL paper, and serves as a tutorial for how to use the functions in this package.
 
-- **Analytical Calculations**: Compute conditional probability functions for color in the Poisson model
-- **Generation & Visualization**: Generate and plot realizations of the Poisson model
-- **Monte Carlo Simulation**: Estimate connectivity distributions and color probabilities
-- **Probability Landscapes**: Visualize conditional probability functions
 
 ## Installation
 
@@ -85,4 +81,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - [GitHub Repository](https://github.com/AlecShelley/hyperpopy)
 - [PyPI Package](https://pypi.org/project/hyperpopy/)
-- [Issue Tracker](https://github.com/AlecShelley/hyperpopy/issues)
