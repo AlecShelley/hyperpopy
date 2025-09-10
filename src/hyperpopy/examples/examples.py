@@ -9,11 +9,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib_inline.backend_inline import set_matplotlib_formats
 
-# Allow running this file directly from the examples directory
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Add src directory to path to find hyperpopy package
+# This adds the src directory (two levels up from examples) to Python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+src_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
 
-from generation_utils import plot_hyperplanes_color_2d  # pylint: disable=wrong-import-position,import-error
-from mc_utils import (  # pylint: disable=wrong-import-position,import-error
+from hyperpopy.generation_utils import plot_hyperplanes_color_2d  # pylint: disable=wrong-import-position,import-error
+from hyperpopy.mc_utils import (  # pylint: disable=wrong-import-position,import-error
     plot_mc_colors_with_errorbars,
     figure_3_helper,
     plot_mc_chord_lengths_with_errorbars,
