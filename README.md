@@ -77,15 +77,6 @@ See the `examples/` directory for comprehensive examples including:
 If you use this package in your research, please cite the main paper at https://doi.org/10.1103/325k-g4dr, the paper's
 data repository at 10.5281/zenodo.16990033, and this package at 10.5281/zenodo.17095969.
 
-```bibtex
-@software{hyperpopy2024,
-  title={HyperPopy: Poisson Hyperplane Model Package},
-  author={Alec Shelley},
-  year={2024},
-  url={https://github.com/AlecShelley/hyperpopy}
-}
-```
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
